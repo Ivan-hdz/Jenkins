@@ -6,7 +6,7 @@ pipeline {
             steps {
 		retry(3) { sh 'echo reintenta x3 en caso de error'}
 		timeout(time: 3, unit: 'MINUTES') {
-			sh 'ecbo aguanta maximo 3 minutos'
+			sh 'echo aguanta maximo 3 minutos'
 		}
                 sh 'echo $SECRET'
             }
